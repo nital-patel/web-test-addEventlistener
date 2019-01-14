@@ -43,3 +43,19 @@ function captureHandler(event)
     //event.stopImmediatePropagation();
     alert('middle, capture');
 }
+function noneCaptureHandler(event)
+{
+    alert('middle, none-capture, default');
+}
+function passiveHandler(event)
+{
+    // Unable to preventDefault inside passive event listener invocation.
+    event.preventDefault();
+    alert('inner1, passive, open new page');
+}
+function nonePassiveHandler(event)
+{
+    event.preventDefault();
+    //event.stopPropagation();
+    alert('inner2, none-passive, default, not open new page');
+}
