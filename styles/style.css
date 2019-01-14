@@ -1,0 +1,30 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+.outer, .middle, .inner1, .inner2 {
+    display: block;
+    width: 520px;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+
+}
+.outer {
+    border:1px solid red;
+    color:red;
+
+}
+.middle{
+    border:1px solid green;
+    color:green;
+    width:460px;
+}
