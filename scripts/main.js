@@ -29,3 +29,17 @@ middle.addEventListener('click', captureHandler, capture);
 middle.addEventListener('click', noneCaptureHandler, noneCapture);
 inner1.addEventListener('click', passiveHandler, passive);
 inner2.addEventListener('click', nonePassiveHandler, nonePassive);
+
+function onceHandler(event)
+{
+    alert('outer, once');
+}
+function noneOnceHandler(event)
+{
+    alert('outer, none-once, default');
+}
+function captureHandler(event)
+{
+    //event.stopImmediatePropagation();
+    alert('middle, capture');
+}
