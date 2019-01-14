@@ -3,7 +3,8 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    border: 5px solid lightslategrey;
+
 }
 h1 {
     text-align: center;
